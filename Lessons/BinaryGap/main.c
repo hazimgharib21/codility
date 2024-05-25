@@ -39,6 +39,16 @@ int main(){
     assert(solution(15) == 0);   // Binary: 1111, no gap
     assert(solution(32) == 0);   // Binary: 100000, no gap
 
+    // Additional test cases
+    assert(solution(1) == 0);     // Binary: 1, no gap
+    assert(solution(3) == 0);     // Binary: 11, no gap
+    assert(solution(16) == 0);    // Binary: 10000, no gap
+    assert(solution(1041) == 5);  // Binary: 10000010001, longest gap: 5
+    assert(solution(8) == 0);     // Binary: 1000, no gap
+    assert(solution(1024) == 0);  // Binary: 10000000000, no gap
+    assert(solution(6) == 0);     // Binary: 110, no gap
+    assert(solution(41) == 2);    // Binary: 101001, longest gap: 2
+
     printf("All test cases passed!\n");
     return 0;
 }
