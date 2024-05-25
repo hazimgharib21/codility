@@ -20,4 +20,4 @@ clean:
 # Build only the subdirectory where make is called
 build:
 	@echo "Building in current directory: $(PWD)"
-	gcc -o main $@/main.c
+	@$(MAKE) -C $(shell basename $(CURDIR))
